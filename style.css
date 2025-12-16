@@ -1,61 +1,74 @@
-/* Reset */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-/* Base */
 body {
+  margin: 0;
   background: #000;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-}
-
-/* Layout */
-header {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-/* Brand */
+/* Container */
+header {
+  animation: fadeIn 1.6s ease forwards;
+}
+
+/* Brand Title */
 h1 {
-  font-size: 3rem;
-  letter-spacing: 4px;
+  font-size: 3.2rem;
+  letter-spacing: 0.35em;
   margin-bottom: 20px;
+  text-shadow: 0 0 12px rgba(255,255,255,0.35);
 }
 
 /* Tagline */
 .tagline {
   font-size: 1rem;
   opacity: 0.7;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
-/* Sub message */
+/* Slogan */
 .coming-soon {
   font-size: 0.95rem;
-  opacity: 0.5;
+  opacity: 0.55;
   margin-bottom: 40px;
 }
 
-/* Button */
+/* CTA Button */
 .cta {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 14px 40px;
   border: 1px solid #fff;
   color: #fff;
   text-decoration: none;
-  letter-spacing: 2px;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
+  letter-spacing: 0.2em;
+  transition: all 0.35s ease;
 }
 
 .cta:hover {
   background: #fff;
   color: #000;
+  box-shadow: 0 0 25px rgba(255,255,255,0.6);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
