@@ -73,49 +73,41 @@ h1 {
   
 /* WAITLIST FORM */
 .waitlist {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
 }
 
-.email-box {
-  display: flex;
-  background: #111;
-  border: 1px solid #444;
-  border-radius: 50px;
-  overflow: hidden;
-  max-width: 420px;
-  width: 100%;
-}
-
-.email-box input {
-  flex: 1;
+.waitlist input {
+  width: 240px;
+  padding: 12px 16px;
   background: transparent;
-  border: none;
-  padding: 14px 18px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 6px;
+  color: white;
   font-size: 14px;
-  color: #fff;
   outline: none;
 }
 
-.email-box input::placeholder {
-  color: #888;
+.waitlist input::placeholder {
+  color: rgba(255,255,255,0.5);
 }
 
-.email-box button {
-  background: #fff;
-  color: #000;
+.waitlist button {
+  padding: 12px 20px;
+  background: white;
+  color: black;
   border: none;
-  padding: 0 22px;
-  font-size: 13px;
+  border-radius: 6px;
   font-weight: 600;
-  letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.25s ease;
 }
 
-.email-box button:hover {
-  background: #e5e5e5;
+.waitlist button:hover {
+  background: #e6e6e6;
 }
 
 header {
